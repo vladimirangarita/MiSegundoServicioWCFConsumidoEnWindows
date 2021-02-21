@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="306006b0-9ecf-47e3-9488-5d6863278597" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8998a451-6588-42ec-94bd-01ece163d801" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -21,13 +21,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://192.168.250.7:8082/Medicamentos.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://192.168.0.101:8082/Medicamentos.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Medicamentos.xsd" MetadataType="Schema" ID="23f68925-6c18-46fd-9958-53e03cd2c647" SourceId="1" SourceUrl="https://192.168.250.7:8082/Medicamentos.svc?xsd=xsd0" />
-    <MetadataFile FileName="Medicamentos1.xsd" MetadataType="Schema" ID="e9ebe813-9a49-43a7-b746-aff505a24f7e" SourceId="1" SourceUrl="https://192.168.250.7:8082/Medicamentos.svc?xsd=xsd2" />
-    <MetadataFile FileName="Medicamentos.wsdl" MetadataType="Wsdl" ID="d9ed8b8b-407b-481d-836c-2cefaacf9ab8" SourceId="1" SourceUrl="https://192.168.250.7:8082/Medicamentos.svc?wsdl" />
-    <MetadataFile FileName="Medicamentos2.xsd" MetadataType="Schema" ID="24681d01-7fe7-49d7-85bf-a43fd8323219" SourceId="1" SourceUrl="https://192.168.250.7:8082/Medicamentos.svc?xsd=xsd1" />
+    <MetadataFile FileName="Medicamentos.xsd" MetadataType="Schema" ID="08700b3e-7fc2-471a-afbf-cad5c4246e2d" SourceId="1" SourceUrl="https://192.168.0.101:8082/Medicamentos.svc?xsd=xsd1" />
+    <MetadataFile FileName="Medicamentos.wsdl" MetadataType="Wsdl" ID="7f920ec0-89fe-40f5-8fa2-32bbe45ef0b8" SourceId="1" SourceUrl="https://192.168.0.101:8082/Medicamentos.svc?wsdl" />
+    <MetadataFile FileName="Medicamentos1.xsd" MetadataType="Schema" ID="06ea5b8a-587c-43e4-afa9-9b9377a050f8" SourceId="1" SourceUrl="https://192.168.0.101:8082/Medicamentos.svc?xsd=xsd2" />
+    <MetadataFile FileName="Medicamentos2.xsd" MetadataType="Schema" ID="c7092611-c928-4bcb-9054-1445406d0452" SourceId="1" SourceUrl="https://192.168.0.101:8082/Medicamentos.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

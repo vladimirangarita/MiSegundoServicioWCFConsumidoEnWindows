@@ -166,7 +166,7 @@
             this.cmdAceptar.Name = "cmdAceptar";
             this.cmdAceptar.Size = new System.Drawing.Size(75, 23);
             this.cmdAceptar.TabIndex = 15;
-            this.cmdAceptar.Text = "button1";
+            this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
             // 
             // CmdCancelar
@@ -175,7 +175,7 @@
             this.CmdCancelar.Name = "CmdCancelar";
             this.CmdCancelar.Size = new System.Drawing.Size(75, 23);
             this.CmdCancelar.TabIndex = 16;
-            this.CmdCancelar.Text = "button2";
+            this.CmdCancelar.Text = "Cancelar";
             this.CmdCancelar.UseVisualStyleBackColor = true;
             // 
             // FrmPopupMedicamento
@@ -200,7 +200,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmPopupMedicamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPopupMedicamento";
+            this.Load += new System.EventHandler(this.FrmPopupMedicamento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
