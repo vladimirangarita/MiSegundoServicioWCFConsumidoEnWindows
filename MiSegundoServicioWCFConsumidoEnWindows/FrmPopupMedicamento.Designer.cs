@@ -137,6 +137,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(158, 20);
             this.txtPrecio.TabIndex = 11;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloDecimales);
             // 
             // txtStock
             // 
@@ -144,6 +145,7 @@
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(158, 20);
             this.txtStock.TabIndex = 12;
+            this.txtStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
             // txtPresentacion
             // 

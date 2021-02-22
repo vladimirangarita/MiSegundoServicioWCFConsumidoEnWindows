@@ -40,8 +40,10 @@
             // 
             // dgvMedicamento
             // 
+            this.dgvMedicamento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvMedicamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMedicamento.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMedicamento.Location = new System.Drawing.Point(0, 0);
             this.dgvMedicamento.Name = "dgvMedicamento";
             this.dgvMedicamento.ReadOnly = true;

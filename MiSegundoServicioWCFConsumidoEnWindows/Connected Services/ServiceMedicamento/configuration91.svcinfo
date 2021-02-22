@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="oEz56Gf+vWhSeLiCw0vhWi6pREE=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="8XpqJKvUle4v01QMp1+ZGr+eGSI=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsHttpBinding" name="wsServicioMedicamento">
       <properties>
@@ -127,10 +127,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="wsServicioMedicamento" contract="ServiceMedicamento.IMedicamentos" bindingType="wsHttpBinding" address="https://192.168.0.101:8082/Medicamentos.svc" bindingConfiguration="wsServicioMedicamento">
+    <endpoint name="wsServicioMedicamento" contract="ServiceMedicamento.IMedicamentos" bindingType="wsHttpBinding" address="https://192.168.250.7:8081/Medicamentos.svc" bindingConfiguration="wsServicioMedicamento">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>https://192.168.0.101:8082/Medicamentos.svc</serializedValue>
+          <serializedValue>https://192.168.250.7:8081/Medicamentos.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
