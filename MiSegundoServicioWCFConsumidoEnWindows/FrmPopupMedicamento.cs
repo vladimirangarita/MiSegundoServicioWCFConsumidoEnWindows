@@ -24,6 +24,8 @@ namespace MiSegundoServicioWCFConsumidoEnWindows
             oMedicamentosClient.ClientCredentials.UserName.UserName = "lhurol";
             oMedicamentosClient.ClientCredentials.UserName.Password = "1234";
             List<FormaFarmaceuticaCLS> ListaForma = oMedicamentosClient.ListaFormaFarmaceutica();
+            ListaForma.Insert(0, new FormaFarmaceuticaCLS { IidFormaFarmaceutica = 0, NombreFormaFarmaceutica = "--Seleccion" });
+
             cboformaFarmaceutica.DataSource = ListaForma;
             cboformaFarmaceutica.DisplayMember = "NombreFormaFarmaceutica";
             cboformaFarmaceutica.ValueMember = "IidFormaFarmaceutica";
@@ -80,6 +82,83 @@ namespace MiSegundoServicioWCFConsumidoEnWindows
             else
             {
                 e.Handled = true;
+            }
+        }
+
+        private void cmdAceptar_Click(object sender, EventArgs e)
+        {
+            var exito = true;
+            if (txtnombre.Text=="")
+            {
+                errorDatos.SetError(txtnombre, "Ingrese nombre");
+                exito = false;
+            }
+            else
+            {
+                errorDatos.SetError(txtnombre, "");
+            }
+
+
+            if (txtStock.Text == "")
+            {
+                errorDatos.SetError(txtStock, "Ingrese Stock");
+                exito = false;
+            }
+            else
+            {
+                errorDatos.SetError(txtnombre, "");
+            }
+
+
+
+
+            if (txtPrecio.Text == "")
+            {
+                errorDatos.SetError(txtPrecio, "Ingrese precio");
+                exito = false;
+            }
+            else
+            {
+                errorDatos.SetError(txtPrecio, "");
+            }
+
+            if (txtPresentacion.Text == "")
+            {
+                errorDatos.SetError(txtPresentacion, "Ingrese Presentacion");
+                exito = false;
+            }
+            else
+            {
+                errorDatos.SetError(txtPresentacion, "");
+            }
+
+            if ((int)cboformaFarmaceutica.SelectedValue==0)
+            {
+                errorDatos.SetError(cboformaFarmaceutica, "Ingrese Forma Farmaceutica");
+                exito = false;
+            }
+            else
+            {
+                errorDatos.SetError(cboformaFarmaceutica, "");
+            }
+
+
+            if (exito==false)
+            {
+                this.DialogResult = DialogResult.None;
+            }
+
+            //ingresando o editando
+            
+            //Nuevo
+            if (txtIdMedicamento.Text=="")
+            {
+
+            }
+            else
+            //Editar
+            {
+
             }
         }
     }

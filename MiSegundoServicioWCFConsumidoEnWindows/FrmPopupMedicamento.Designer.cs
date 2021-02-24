@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +45,8 @@
             this.cboformaFarmaceutica = new System.Windows.Forms.ComboBox();
             this.cmdAceptar = new System.Windows.Forms.Button();
             this.CmdCancelar = new System.Windows.Forms.Button();
+            this.errorDatos = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -116,6 +119,7 @@
             this.txtIdMedicamento.ReadOnly = true;
             this.txtIdMedicamento.Size = new System.Drawing.Size(158, 20);
             this.txtIdMedicamento.TabIndex = 7;
+            this.txtIdMedicamento.Text = "0";
             // 
             // txtnombre
             // 
@@ -164,21 +168,28 @@
             // 
             // cmdAceptar
             // 
+            this.cmdAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdAceptar.Location = new System.Drawing.Point(159, 327);
             this.cmdAceptar.Name = "cmdAceptar";
             this.cmdAceptar.Size = new System.Drawing.Size(75, 23);
             this.cmdAceptar.TabIndex = 15;
             this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
+            this.cmdAceptar.Click += new System.EventHandler(this.cmdAceptar_Click);
             // 
             // CmdCancelar
             // 
+            this.CmdCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.CmdCancelar.Location = new System.Drawing.Point(257, 327);
             this.CmdCancelar.Name = "CmdCancelar";
             this.CmdCancelar.Size = new System.Drawing.Size(75, 23);
             this.CmdCancelar.TabIndex = 16;
             this.CmdCancelar.Text = "Cancelar";
             this.CmdCancelar.UseVisualStyleBackColor = true;
+            // 
+            // errorDatos
+            // 
+            this.errorDatos.ContainerControl = this;
             // 
             // FrmPopupMedicamento
             // 
@@ -205,6 +216,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPopupMedicamento";
             this.Load += new System.EventHandler(this.FrmPopupMedicamento_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +240,6 @@
         private System.Windows.Forms.ComboBox cboformaFarmaceutica;
         private System.Windows.Forms.Button cmdAceptar;
         private System.Windows.Forms.Button CmdCancelar;
+        private System.Windows.Forms.ErrorProvider errorDatos;
     }
 }
