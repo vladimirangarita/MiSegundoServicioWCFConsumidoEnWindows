@@ -146,20 +146,48 @@ namespace MiSegundoServicioWCFConsumidoEnWindows
             if (exito==false)
             {
                 this.DialogResult = DialogResult.None;
+                return;
+            }
+            else
+            {
+
+                MedicamentoCLS oMedicamentoCLS = new MedicamentoCLS();
+                oMedicamentoCLS.IidMedicamento = int.Parse(txtIdMedicamento.Text);
+                oMedicamentoCLS.Nombre = txtnombre.Text;
+                oMedicamentoCLS.Precio = decimal.Parse(txtPrecio.Text);
+                oMedicamentoCLS.Presentacion = txtPresentacion.Text;
+                oMedicamentoCLS.IidFormaFarmaceutica = (int)cboformaFarmaceutica.SelectedValue;
+                oMedicamentoCLS.Stock = int.Parse(txtStock.Text);
+                oMedicamentoCLS.BHabilitado = 1;
+                MedicamentosClient oMedicamentosClient = new MedicamentosClient();
+                oMedicamentosClient.ClientCredentials.UserName.UserName = "lhurol";
+                oMedicamentosClient.ClientCredentials.UserName.Password = "1234";
+            int rpta =    oMedicamentosClient.RegistraryActualizarMedicamento(oMedicamentoCLS);
+
+                if (rpta==1)
+                {
+                    MessageBox.Show("Guardado");
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                    this.DialogResult = DialogResult.None;
+                }
             }
 
             //ingresando o editando
-            
+
             //Nuevo
-            if (txtIdMedicamento.Text=="")
-            {
+            //if (txtIdMedicamento.Text=="")
+            //{
 
-            }
-            else
-            //Editar
-            {
+            //}
+            //else
+            ////Editar
+            //{
 
-            }
+            //}
         }
     }
 }
